@@ -73,9 +73,6 @@ function getForecast(city) {
 // code for dispaying the weather forecast
 
 function displayForecast(response) {
-  console.log(response.data);
-
-  // let days = ["Tues", "Wed", "Thur", "Fri", "Sat"];
   let forecastHTML = "";
 
   response.data.daily.forEach(function (day, index) {
